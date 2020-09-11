@@ -19,19 +19,22 @@ body {
 }
     .left-column {
         display: inline-block;
-        background-color: rgb(121, 88, 88);
+        background-color: blueviolet;
         padding: 40px;
         float: left;
-        width: calc(40% - 2px)
+        width: calc(40% - 2px);
     }
          .title {
-            
+            margin-bottom: 500px;
+            margin-left: 20px;
         }
         .footer {
-
+            float: bottom;
+            margin-left: 80px;
+            color: white;
         }
             .link {
-
+                color: white;
             }
             .ampersand {}
     .right-column {
