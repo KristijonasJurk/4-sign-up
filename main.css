@@ -9,47 +9,44 @@ body * {
 body {
     background-color: rgb(175, 175, 218);
 }
-img {
-    width: 100%;
-    height: 100vh;
-    background-image: url(./kalnas.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    filter: blur(10px);
-    position: relative;
-}
-.container {
+    .background {
+        width: 100%;
+        height: 100vh;
+        background-image: url(./kalnas.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        filter: blur(10px);
+    }
+    .container {
     display: inline-block;
-    background-color: teal*;
-    padding: 40px*;
-    margin-top: 150px*;
-    margin-left: calc((100% - 900px) / 2)*;
-    width: 1000px;
+    width: 800px;
+    height: 600px;
     position: absolute;
-    top: 0%;
-    left: 0%;
-    transform: translate(50%, 20%);
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, 0%);
 }
     .left-column {
         display: inline-block;
         background-color: blueviolet;
         padding: 40px;
-        float: left*;
-        width: calc(42% - 2px);
+        width: 40%;
         background-image: url(./kalnas.png);
         background-repeat: no-repeat;
-        background-position: top;
+        background-position: center;
         background-size: cover;
-        position: relative;
+        color: white;
+        position: absolute;
         bottom: 30px;
         top: 30px;
     }
          .title {
-            margin-bottom: 500px;
-            margin-left: 20px;
-            font-size: 40px;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            color: white;
+            margin-bottom: 500px*;
+            margin-left: 20px*;
+            font-size: 40px*;
+            font-family: Verdana, Geneva, Tahoma, sans-serif*;
+            color: white*;
         }
         .footer {
             position: absolute;
@@ -60,17 +57,20 @@ img {
             .link {
                 color: white;
             }
-            .ampersand {}
+            .ampersand {
+
+            }
     .right-column {
         display: inline-block;
-        background-color: white;
-        padding: 60px;
-        height: 700px*;
-        margin-top: -30px*;
-        float: left;
-        width: calc(58% - 2px);
-        position: relative;
-        float: right;
+        background-color: #ffffff;
+        height: 600px;
+        width: 60%;
+        line-height: 40px;
+        text-align: center*;
+        font-size: 20px;
+        position: absolute;
+        top: 0;
+        right: 0;
     }
 
         .close {
@@ -79,27 +79,27 @@ img {
             width: 60px;
             line-height: 56px;
             text-align: center;
-            margin-top: 0px;
             position: absolute;
-            top: 0px;
-            right: 0px;
-            font-size: 40px;
+            top: 0;
+            right: 0;
+            font-size: 30px;
             cursor: col-resize;
         }
 
         .form {
             display: inline-block;
             width: 100%;
+            padding: 60px;
         }
 
-        .form-row {
-            display: inline-block;
-            width: 100%;
-            margin-bottom: 40px;
-        }
-        .form-row:last-of-type {
-            margin-bottom: 0%;
-        }
+            .form-row {
+                display: inline-block;
+                width: 100%;
+                margin-bottom: 30px;
+            }
+                .form-row:last-of-type {
+                    margin-bottom: 0%;
+                }
         
             label {
                 color: gray;
@@ -111,15 +111,12 @@ img {
             input {
                 display: inline-block;
                 width: 100%;
-                border-right: none;
-                border-top: none;
-                border-left: none;
-                border-bottom-color: blueviolet; 
+                border: none;
+                border-bottom: 1px solid #ccc;
                 font-size: 20px;
             }
-        .button {
+        .btn {
             display: inline-block;
-            margin-top: 20px;
             background-color: blue;
             color: white;
             padding: 10px;
@@ -131,7 +128,6 @@ img {
         }
         .or {
             display: inline-block;
-            margin-top: 20px;
             padding: 30px;
             line-height: 20px;
             padding-top: 10px;
@@ -139,7 +135,6 @@ img {
         }
         .blue-link {
             display: inline-block;
-            margin-top: 20px;
             color: blue;
             line-height: 20px;
             padding-top: 10px;
