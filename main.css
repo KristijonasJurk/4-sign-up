@@ -9,24 +9,40 @@ body * {
 body {
     background-color: rgb(175, 175, 218);
 }
+img {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./kalnas.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(10px);
+    position: relative;
+}
 .container {
     display: inline-block;
     background-color: teal*;
     padding: 40px*;
-    margin-top: 150px;
-    margin-left: calc((100% - 900px) / 2);
+    margin-top: 150px*;
+    margin-left: calc((100% - 900px) / 2)*;
     width: 1000px;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translate(50%, 20%);
 }
     .left-column {
         display: inline-block;
         background-color: blueviolet;
         padding: 40px;
-        float: left;
+        float: left*;
         width: calc(42% - 2px);
         background-image: url(./kalnas.png);
         background-repeat: no-repeat;
         background-position: top;
         background-size: cover;
+        position: relative;
+        bottom: 30px;
+        top: 30px;
     }
          .title {
             margin-bottom: 500px;
@@ -36,8 +52,9 @@ body {
             color: white;
         }
         .footer {
-            float: bottom;
-            margin-left: 80px;
+            position: absolute;
+            bottom: 40px;
+            left: 80px;
             color: white;
         }
             .link {
@@ -48,14 +65,26 @@ body {
         display: inline-block;
         background-color: white;
         padding: 60px;
-        height: 700px;
-        margin-top: -30px;
+        height: 700px*;
+        margin-top: -30px*;
         float: left;
-        width: calc(58% - 2px)
+        width: calc(58% - 2px);
+        position: relative;
+        float: right;
     }
 
         .close {
             display: inline-block;
+            height: 60px;
+            width: 60px;
+            line-height: 56px;
+            text-align: center;
+            margin-top: 0px;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            font-size: 40px;
+            cursor: col-resize;
         }
 
         .form {
